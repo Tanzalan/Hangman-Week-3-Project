@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Play Hangman</h1>
+<div class="row pb-5">
+    <div class="col-4">
+      <div class="card mt-3">
+        <div style="overflow: hidden; height: 15rem;">
+          <img src="https://i.dailymail.co.uk/i/pix/2012/08/27/article-0-044AE8690000044D-813_634x463.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <a href="{{url_for('new_game')}}" class="btn btn-primary">Start New Game</a>
+        </div>
+      </div>
+    </div>    <div class="col-4">
+      <div class="card mt-3">
+        <div style="overflow: hidden; height: 15rem;">
+          <img src="https://c8.alamy.com/compde/cr8hnm/blonde-frau-im-friedhof-cr8hnm.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <a href="{{url_for('show_stats')}}" class="btn btn-primary">See Stats</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
